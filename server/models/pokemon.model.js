@@ -13,12 +13,16 @@ const pokemonSchema = new Schema(
 			required: true,
 			trim: true,
 		},
-		image: {
+		description: {
 			type: String,
 			required: true,
 			trim: true,
 		},
-		
+		imageUrl: {
+			type: String,
+			required: true,
+			trim: true,
+		},
 	},
 	{
 		timestamps: true,
