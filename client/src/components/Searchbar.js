@@ -1,15 +1,17 @@
 import React from 'react';
-const [useState] = 'React'
+import { searchPokemon } from '../pokeapi';
+const { useState } = React
 
 const Searchbar = () => {
-//const [search, setSearch] = useState("")
+const [search, setSearch] = useState("")
 
 const changeText = (e) => {
       setSearch(e.target.value)
 }
 
-const onClick = (e) => {
-      
+const onClick = async (e) => {
+      const data = await searchPokemon(search)
+      console.log(data)
 }
 
     return (
@@ -19,7 +21,7 @@ const onClick = (e) => {
                    onChange = {changeText}/>
 
         <div>
-            <button onChange = {onClick}/>
+            <button onClick = {onClick}/>
         </div>
         </div>
         </div>
