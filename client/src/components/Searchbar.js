@@ -26,8 +26,8 @@ const onClick = async (e) => {
             <div>
         </div>
         {pokemon && <div>
-        <div><h1>Name: {pokemon?.name}</h1></div>
-        <h1>Weight: {pokemon?.weight}</h1>
+        <div><h1>Name: {pokemon.name}</h1></div>
+        <h1>Weight: {pokemon.weight}</h1>
         <div><img src={pokemon.sprites.front_default} alt = "poke-api-pok"/></div>
         </div>}
         </div>

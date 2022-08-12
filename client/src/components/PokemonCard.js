@@ -1,12 +1,14 @@
 import React from 'react'
 
 const PokemonCard = (props) => {
-    console.log(props)
+    const { allPokemon } = props;
 
     return (
-        <div>
-            <h1>Name: </h1>
-            <h1>Weight: </h1>
+        <div key={allPokemon.name}>
+            <div>
+                <h1>Name: {allPokemon.name} </h1>
+                <h1>Weight: {allPokemon.weight} </h1>
+            </div>
         </div>
     );
 }
