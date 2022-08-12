@@ -21,14 +21,13 @@ const onClick = async (e) => {
             <input placeholder= "Search Pokemon..."
                    onChange = {changeText}/>
                    </div>
-
         <div>
             <button onClick = {onClick} />
             <div>
         </div>
         {pokemon && <div>
-        <div><h1>Nombre: {pokemon?.name}</h1></div>
-        <h1>Peso: {pokemon?.weight}</h1>
+        <div><h1>Name: {pokemon?.name}</h1></div>
+        <h1>Weight: {pokemon?.weight}</h1>
         <div><img src={pokemon.sprites.front_default} alt = "poke-api-pok"/></div>
         </div>}
         </div>
