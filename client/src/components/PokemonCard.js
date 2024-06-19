@@ -2,7 +2,6 @@ import React from 'react'
 
 const PokemonCard = (props) => {
     const { allPokemon } = props;
-
     return (
         <div key={allPokemon.name}>
             <div>
